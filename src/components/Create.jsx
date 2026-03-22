@@ -17,7 +17,7 @@ const Create = () => {
    const handleSubmit = (e) => {
     e.preventDefault()
 
-    axios.post("http://localhost:3000/users", formData)
+    axios.post("https://react-app-1-bc05.onrender.com/users", formData)
       .then(() => {
         alert("User Added Successfully")
         navigate("/")   

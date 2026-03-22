@@ -10,7 +10,7 @@ const Update = () => {
         number:""
     });
     useEffect(()=>{
-       axios.get("http://localhost:3000/users/"+id)
+       axios.get("https://react-app-1-bc05.onrender.com/users/"+id)
        .then((res)=>{
            setData(res.data)
        })
@@ -18,7 +18,7 @@ const Update = () => {
     const navigate= useNavigate()
     const handleUpdate = (e) =>{
          
-         axios.put("http://localhost:3000/users/"+id,data).then((res)=>{}).catch((err)=>{})
+         axios.put("https://react-app-1-bc05.onrender.com/users/"+id,data).then((res)=>{}).catch((err)=>{})
   navigate("/")
     }
        const handleChange = (e) => {

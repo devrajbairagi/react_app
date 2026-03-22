@@ -13,7 +13,7 @@ const View = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get("http://localhost:3000/users/" + id)
+    axios.get("https://react-app-1-bc05.onrender.com/users/" + id)
       .then((res) => {
         setData(res.data)   
       })

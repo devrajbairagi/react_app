@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 const Table = () => {
     const [user,setUser] = useState([])
     useEffect(()=>{
-        axios.get("http://localhost:3000/users")
+        axios.get("https://react-app-1-bc05.onrender.com/users")
         .then((res)=>{
              setUser(res.data)
             console.log(res)})
@@ -13,7 +13,7 @@ const Table = () => {
     },[])
     const navigate = useNavigate()
     const handleDelete = (id)=>{
-         axios.delete("http://localhost:3000/users/"+id)
+         axios.delete("https://react-app-1-bc05.onrender.com/users/"+id)
          .then().catch()
           window.location.reload()
 
