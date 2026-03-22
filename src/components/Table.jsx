@@ -12,13 +12,15 @@ const Table = () => {
         .catch((err)=>{console.log(err)})
     },[])
     const navigate = useNavigate()
-    const handleDelete = (id)=>{
-         axios.delete("https://react-app-1-bc05.onrender.com/users/"+id)
-         .then().catch()
-          window.location.reload()
-
-          
-    }
+    const handleDelete = (id) => {
+  axios.delete("https://react-app-1-bc05.onrender.com/users/" + id)
+    .then(() => {
+      setUser((prev) => prev.filter((u) => u.id !== id))
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+}
   return (
    <>
    <div className="container mt-5">
