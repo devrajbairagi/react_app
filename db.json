@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Devraj",
+      "age": 22,
+      "number": "9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Rahul",
+      "age": 25,
+      "number": "9123456780"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "price": 50000
+    },
+    {
+      "id": 2,
+      "title": "Mobile",
+      "price": 20000
+    }
+  ]
+}
