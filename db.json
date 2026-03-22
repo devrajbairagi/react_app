@@ -12,17 +12,5 @@
       "age": 25,
       "number": "9123456780"
     }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "title": "Laptop",
-      "price": 50000
-    },
-    {
-      "id": 2,
-      "title": "Mobile",
-      "price": 20000
-    }
   ]
-}
+ }
