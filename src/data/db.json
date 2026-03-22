@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "devraj",
+      "age": "22",
+      "number": "8602333722",
+      "id": "hngQv_Xc7pE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
